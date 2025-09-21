@@ -30,6 +30,17 @@
 - تم إضافة خريطة وموقع المحل في صفحة التواصل. الإحداثيات: `33.8040302, -6.7947748`.
 - رابط مباشر إلى Google Maps (اتجاهات): `https://www.google.com/maps/dir//33.8040302,-6.7947748/@33.8040116,-6.7948136,19.25z?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D`
 
+نشر على GitHub Pages (آلي):
+
+- أنشئي مستودعًا جديدًا على GitHub (مثلاً `FZ-BRAND-site`).
+- انسخي رابط المستودع (HTTPS).
+- افتحي PowerShell داخل مجلد المشروع ثم شغلي (واستبدلي الرابط بالرابط الخاص بك):
+```
+.\publish-setup.ps1 -RepoUrl "https://github.com/<your-username>/<your-repo>.git"
+```
+- بعد تدفقي الملفات، سيقوم GitHub Actions بنشر الموقع تلقائياً على فرع `gh-pages`.
+- بعد اكتمال النشر، افتحي: `https://<your-username>.github.io/<your-repo>/` لرؤية الموقع.
+
 تشغيل محلي بسيط:
 1. افتح المجلد في متصفحك عبر المسار المحلي: افتح `c:\...\FZ BRAND\index.html`.
 2. أو شغّل سيرفر بسيط (مستحسن لتفادي قيود بعض المتصفحات):
