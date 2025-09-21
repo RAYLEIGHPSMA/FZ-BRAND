@@ -2,7 +2,7 @@ Param(
   [string]$RepoUrl
 )
 if (-not $RepoUrl) {
-  Write-Host "Usage: .\publish-setup.ps1 -RepoUrl https://github.com/your-username/your-repo.git"
+  Write-Host "Usage: .\publish-setup.ps1 -RepoUrl https://rayleighpsma.github.io/FZ-BRAND/
   exit 1
 }
 
